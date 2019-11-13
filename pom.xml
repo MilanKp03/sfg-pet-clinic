@@ -19,7 +19,7 @@
     <artifactId>sfg-pet-clinic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sfg-pet-clinic</name>
-    <description>Sfg pet clicik</description>
+    <description>Sfg pet clinic</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,7 +30,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:MilanKp03/sfg-pet-clinic.git</developerConnection>
+    </scm>
 
 </project>
